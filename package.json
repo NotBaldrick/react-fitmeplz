@@ -1,10 +1,20 @@
 {
   "name": "react-fitmeplz",
   "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "description": "Fit text into any element.",
   "author": "NotBaldrick",
   "license": "MIT",
-  "repository": "NotBaldrick/react-fitmeplz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NotBaldrick/react-fitmeplz"
+  },
+  "keywords": [
+    "textfit",
+    "fitmeplz",
+    "text",
+    "react",
+    "react-component"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
