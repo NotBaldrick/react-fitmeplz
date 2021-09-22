@@ -2,7 +2,6 @@
 
 [![Twitter](https://img.shields.io/twitter/follow/NotBaldrick.svg?style=social&label=@NotBaldrick)](https://twitter.com/NotBaldrick)
 
-
 ![Showcase](./demo/showcase.gif)
 
 ## Install
@@ -52,7 +51,7 @@ export default Header
 | `throttle`    | number   | 0        | Calculating optimal font size throttle in milliseconds.                                                            |
 | `step`        | number   | 1        | Font size change in pixels when calculating optimal font size.<br>WARNING! A large value may cause infinite loops. |
 | `hideOnMount` | boolean  | true     | Text will be hidden on component mount until font size calculation has finished.                                   |
-| `hideOnCalc`  | number   | true     | Text will be hidden every time a new font size has to be calculated.                                               |
+| `hideOnCalc`  | boolean  | true     | Text will be hidden every time a new font size has to be calculated.                                               |
 | `onStart`     | function | () => {} | Function will be called when font size is calculating.                                                             |
 | `onEnd`       | function | () => {} | Function will be called when font size has finished being calculated.                                              |
 | `onFontsize`  | function | () => {} | Function will be called every time the font size changes.<br>Will return the new font size in pixels as a string.  |
