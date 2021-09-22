@@ -14,6 +14,7 @@ const StyContainer = styled.div`
 const DynamicText = styled.div`
   white-space: nowrap;
   display: inline;
+  vertical-align: top;
   opacity: ${(p) => p.$opacity};
 `;
 
