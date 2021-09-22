@@ -14,31 +14,31 @@ yarn add react-fitmeplz
 ## Usage
 
 ```jsx
-import React from 'react'
-import Fitmeplz from 'react-fitmeplz'
+import React from "react";
+import Fitmeplz from "react-fitmeplz";
 
 function Header() {
-    return (
-        <div style={{width: "100px", height: "300px"}}>
-            <Fitmeplz
-                min={10}
-                max={100}
-                start={50}
-                throttle={0}
-                step={5}
-                hideOnMount={true}
-                hideOnCalc={true}
-                onStart={() => console.log("Calculating optimal font size!")
-                onEnd={() => console.log("Finished calculating optimal font size!")}
-                onFontsize={(fontSize) => console.log(`Current font size is: ${fontsize}`)}
-            >
-                This is a test!
-            </Fitmeplz>
-        </div>
-    )
+  return (
+    <div style={{width: "100px", height: "300px"}}>
+      <Fitmeplz
+        min={10}
+        max={100}
+        start={50}
+        throttle={0}
+        step={5}
+        hideOnMount={true}
+        hideOnCalc={true}
+        onStart={() => console.log("Calculating optimal font size!")}
+        onEnd={() => console.log("Finished calculating optimal font size!")}
+        onFontsize={(size) => console.log(`Current font size is: ${size}`)}
+      >
+        This is a test!
+      </Fitmeplz>
+    </div>
+  );
 }
 
-export default Header
+export default Header;
 ```
 
 ## Props
