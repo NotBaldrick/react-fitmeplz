@@ -10,10 +10,12 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
-    "react": "link:../node_modules/react",
-    "react-dom": "link:../node_modules/react-dom",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-fitmeplz": "link:..",
     "react-scripts": "link:../node_modules/react-scripts",
-    "react-fitmeplz": "link:.."
+    "styled-breakpoints": "^10.0.1",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
