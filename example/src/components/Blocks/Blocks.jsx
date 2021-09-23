@@ -5,9 +5,10 @@ const CSSBlock = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  padding: 1rem;
   box-sizing: border-box;
   height: 100%;
+  width: 100%;
 `;
 
 export const OptionsBlock = styled.div`
