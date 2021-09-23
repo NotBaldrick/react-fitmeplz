@@ -7,6 +7,7 @@ const CSSBlock = css`
   align-items: center;
   margin: 1rem;
   box-sizing: border-box;
+  height: 100%;
 `;
 
 export const OptionsBlock = styled.div`
@@ -15,7 +16,6 @@ export const OptionsBlock = styled.div`
   ${down("md")} {
     grid-area: 2 / 1;
   }
-
   ${CSSBlock}
 `;
 
@@ -25,6 +25,5 @@ export const DisplayBlock = styled.div`
   ${down("md")} {
     grid-area: 1 / 1;
   }
-
   ${CSSBlock}
 `;
