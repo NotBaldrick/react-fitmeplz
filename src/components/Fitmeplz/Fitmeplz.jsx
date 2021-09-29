@@ -1,22 +1,20 @@
 import React, {useState, useEffect, useRef} from "react";
 import _ from "lodash";
-import styled from "styled-components";
 import PropTypes from "prop-types";
 
-const StyContainer = styled.div`
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-`;
+const containerStyles = {
+  boxSizing: "border-box",
+  height: "100%",
+  width: "100%",
+  overflow: "hidden",
+  textAlign: "center",
+};
 
-const DynamicText = styled.div`
-  white-space: nowrap;
-  display: inline;
-  vertical-align: top;
-  opacity: ${(p) => p.$opacity};
-`;
+const dynamicTextStyles = {
+  whiteSpace: "nowrap",
+  display: "inline",
+  verticalAlign: "top",
+};
 
 function Fitmeplz({
   min,
@@ -140,15 +138,22 @@ function Fitmeplz({
   }, 100);
 
   return (
-    <StyContainer ref={containerRef} {...rest}>
-      <DynamicText
-        $opacity={hide ? 0 : 1}
+    <div
+      ref={containerRef}
+      {...rest}
+      style={{...containerStyles, ...rest.styles}}
+    >
+      <div
         ref={textRef}
-        style={{fontSize: `${start}px`}}
+        style={{
+          ...dynamicTextStyles,
+          opacity: hide ? 0 : 1,
+          fontSize: `${start}px`,
+        }}
       >
         {children}
-      </DynamicText>
-    </StyContainer>
+      </div>
+    </div>
   );
 }
 
